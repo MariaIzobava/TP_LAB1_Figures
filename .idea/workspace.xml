@@ -2,58 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8974b0c8-d7ce-46bb-99fe-0477be3d2540" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/System/Application/MainPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/Figure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures1d/Figure1D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures1d/PolygonalChain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures1d/segments/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures1d/segments/Ray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures1d/segments/Segment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures2d/Figure2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures2d/ellipse/Ellipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures2d/polygons/Polygon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures2d/polygons/RegularPolygon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/SymmetricFigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Application/PanelLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/System/Application/PanelLayout.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main$MainPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main$MainPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main$MainPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Ellipse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Ellipse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Figure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Figure1D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Figure1D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Figure2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Figure2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/IsoscelesTriangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/IsoscelesTriangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Line.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Polygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Polygon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/PolygonalChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/PolygonalChain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Ray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Ray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/RegularPolygon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/RegularPolygon.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Rhombus.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Rhombus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Segment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/Segment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/SymmetricFigure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_LAB1_Figures/System/SymmetricFigure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/figures/figures2d/ellipse/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Ellipse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Figure.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Figure1D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Figure2D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/IsoscelesTriangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/IsoscelesTriangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Line.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Polygon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/PolygonalChain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Ray.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/RegularPolygon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Rhombus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/Rhombus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/Segment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/System/SymmetricFigure.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/System/Application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/System/Application/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -126,70 +79,47 @@
     <session id="-1038291360">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="7" />
-          <entry key="java" value="125" />
+          <entry key="gitignore" value="10" />
+          <entry key="java" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="125" />
-          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="JAVA" value="129" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gitignore" value="1" />
-          <entry key="java" value="26" />
+          <entry key="gitignore" value="2" />
+          <entry key="java" value="29" />
+          <entry key="jfd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="26" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="JAVA" value="29" />
+          <entry key="JFormDesigner_form" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/IsoscelesTriangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/Figure2D.java">
+        <entry file="file://$PROJECT_DIR$/src/System/Application/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/Rectangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/figures/figures1d/Figure1D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+            <state relative-caret-position="379">
+              <caret line="92" column="40" lean-forward="true" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -197,29 +127,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/figures/figures1d/PolygonalChain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-            </state>
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/System/Application/PanelLayout.jfd">
+          <provider selected="true" editor-type-id="JFormDesigner" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/Rhombus.java">
+        <entry file="file://$PROJECT_DIR$/src/System/Application/PanelLayout.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/figures/Figure.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+            <state relative-caret-position="221">
+              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding>
+                <marker date="1552352021396" expanded="false" signature="373:9880" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+                <marker date="1552352021396" expanded="false" signature="9892:11111" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -227,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/System/Application/MainPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="68">
               <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -239,28 +160,6 @@
                 <element signature="method#releaseMouse#0;class#MainPanel#0" />
                 <element signature="method#clearImage#0;class#MainPanel#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/Application/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#initComponents#0;class#Main#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/RegularPolygon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -292,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/System/IrregularFigure.java" />
         <option value="$PROJECT_DIR$/src/System/Circle.java" />
         <option value="$PROJECT_DIR$/src/System/Triangle.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/System/MainPanel.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/System/Ellipse.java" />
@@ -311,9 +209,12 @@
         <option value="$PROJECT_DIR$/src/System/Segment.java" />
         <option value="$PROJECT_DIR$/src/System/figures/Figure1D.java" />
         <option value="$PROJECT_DIR$/src/System/figures/figures2d/polygons/RegularPolygon.java" />
-        <option value="$PROJECT_DIR$/src/System/figures/figures1d/Figure1D.java" />
         <option value="$PROJECT_DIR$/src/System/figures/figures1d/PolygonalChain.java" />
         <option value="$PROJECT_DIR$/src/System/figures/figures2d/Figure2D.java" />
+        <option value="$PROJECT_DIR$/src/System/figures/figures1d/Figure1D.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/System/Application/Main.java" />
+        <option value="$PROJECT_DIR$/src/System/Application/PanelLayout.jfd" />
       </list>
     </option>
   </component>
@@ -351,6 +252,26 @@
               <item name="TP_LAB1_Figures" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="TP_LAB1_Figures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP_LAB1_Figures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="System" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP_LAB1_Figures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP_LAB1_Figures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="System" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP_LAB1_Figures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP_LAB1_Figures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="System" type="462c0819:PsiDirectoryNode" />
+              <item name="figures" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -361,13 +282,14 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552342883669" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552350955964" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -407,28 +329,28 @@
       <updated>1552323509158</updated>
       <workItem from="1552323512620" duration="1793000" />
       <workItem from="1552325457042" duration="3155000" />
-      <workItem from="1552339508604" duration="3367000" />
+      <workItem from="1552339508604" duration="6517000" />
+      <workItem from="1552346206309" duration="5790000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8885000" />
+    <option name="totallyTimeSpent" value="17825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Hybris Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18418202" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18418202" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,6 +360,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32827735" />
+      <window_info anchor="bottom" id="Hybris Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -464,20 +387,10 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/figures/figures1d/segments/Segment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -520,6 +433,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/IsoscelesTriangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/Figure2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="15" lean-forward="true" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -528,15 +455,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/figures/figures1d/Figure1D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/figures/figures1d/PolygonalChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/Rhombus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -547,9 +491,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/RegularPolygon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/System/Application/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="92" column="40" lean-forward="true" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/System/Application/MainPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="68">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -564,54 +532,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/Application/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/System/Application/PanelLayout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="221">
+          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initComponents#0;class#Main#0" />
+            <marker date="1552352021396" expanded="false" signature="373:9880" ph="// JFormDesigner - Component initialization - DO NOT MODIFY" />
+            <marker date="1552352021396" expanded="false" signature="9892:11111" ph="// JFormDesigner - Variables declaration - DO NOT MODIFY" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/figures/figures1d/Figure1D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/figures/figures1d/PolygonalChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/Figure2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/RegularPolygon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/System/figures/figures2d/polygons/symmetric/IsoscelesTriangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/System/Application/PanelLayout.jfd">
+      <provider selected="true" editor-type-id="JFormDesigner" />
     </entry>
   </component>
   <component name="masterDetails">

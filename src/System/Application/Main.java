@@ -104,7 +104,6 @@ public class Main extends JFrame {
         buttonGroup.add(segment);
         buttonGroup.add(symmetricFigure);
 
-
         add(buttonPanel, BorderLayout.CENTER);
         add(scrollPane, BorderLayout.WEST);
     }
