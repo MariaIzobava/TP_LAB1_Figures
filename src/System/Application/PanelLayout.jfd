@@ -1,0 +1,119 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Figures Painter 1.0"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:23:p, comp toolBar1:::p:213:p, space :::x, comp panel3:::p::p, space u:::p, comp scrollPane2:::p:675:p, space :::p, par l:::p {comp button1::::131:x, comp button2::::131:x, comp spinner::l::131:x, comp textField1::l::131:x}, space :p:12:p}}"
+				"$verticalGroup": "par l {seq l {space :p:27:p, par l {comp panel3:::::x, comp toolBar1:::::x, comp scrollPane2::l:::x}, space :p:27:p}, seq l {space :p:115:p, comp button1:::p:67:p, space :p:27:p, comp button2:::p:67:p, space :p:16:p, comp textField1:::p:44:p, space :::p, comp spinner:::p:42:p, space :::x}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+						"$horizontalGroup": "par l {space :0:787:x}"
+						"$verticalGroup": "par l {space :0:637:x}"
+					} ) {
+						name: "panel2"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {space :0:0:x}"
+					"$verticalGroup": "par l {space :0:0:x}"
+				} ) {
+					name: "panel3"
+				} )
+				add( new FormContainer( "javax.swing.JToolBar", new FormLayoutManager( class javax.swing.JToolBar ) ) {
+					name: "toolBar1"
+					"orientation": 1
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane3"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane1"
+							"text": "Figures To Draw:"
+							"editable": false
+							"enabled": false
+							"font": new java.awt.Font( "Segoe UI", 1, 22 )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "circleRadioButton"
+						"text": "Circle"
+						auxiliary() {
+							"JavaCodeGenerator.variableName": "circleRadioButton"
+						}
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "ellipseRadioButton"
+						"text": "Ellipse"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "isoscelesTriangleRadioButton"
+						"text": "IsoscelesTriangle"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "lineRadioButton"
+						"text": "Line"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "polygonRadioButton"
+						"text": "Polygon"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "polygonalChainRadioButton"
+						"text": "PolygonalChain"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "rayRadioButton"
+						"text": "Ray"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "rectangleRadioButton"
+						"text": "Rectangle"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "regularPolygonRadioButton"
+						"text": "RegularPolygon"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "rhombusRadioButton"
+						"text": "Rhombus"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "segmentRadioButton"
+						"text": "Segment"
+					} )
+					add( new FormComponent( "javax.swing.JRadioButtonMenuItem" ) {
+						name: "symmetricFigureRadioButton"
+						"text": "SymmetricFigure"
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Choose Color"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Clear Content"
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "spinner"
+					"model": new javax.swing.SpinnerNumberModel( 1, 1, 15, 1 )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+					"editable": false
+					"text": "Set Amout Of Points:"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1080, 725 )
+		} )
+	}
+}
