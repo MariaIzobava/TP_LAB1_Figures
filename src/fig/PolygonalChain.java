@@ -3,6 +3,7 @@ package fig;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,15 +11,18 @@ import java.util.List;
  * @version 1.0
  * @created 10-Mar-2019 11:55:56 PM
  */
-public class PolygonalChain {
+public class PolygonalChain extends Figure {
 
-	private List<Segment> segments;
-        private Color borderColor;
-        
+	private ArrayList<Segment> segments;
+
 	public PolygonalChain(List<Point> points, Color c) {
             borderColor = c;
-            for (int i=0; i< points.size()-1; ++i)
-                segments.add(new Segment(points.get(i), points.get(+1), borderColor));
+            System.out.println(points.size());
+            segments = new ArrayList<>();
+			center = points.get(0);
+            for (int i=0; i< points.size()-1; ++i) {
+				segments.add(new Segment(points.get(i), points.get(i+1), borderColor));
+			}
 
 	}
 	public void draw(Graphics2D g) {
@@ -48,7 +52,7 @@ public class PolygonalChain {
 	 * 
 	 * @param newVal
 	 */
-	public void setsegments(List<Segment> newVal){
+	public void setsegments(ArrayList<Segment> newVal){
 		segments = newVal;
 	}
 }//end PolygonalChain

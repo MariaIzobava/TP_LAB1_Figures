@@ -101,13 +101,15 @@ public class PanelPaint extends JPanel
                }
                else if (curInst == Instrument.POLYGONAL_CHAIN)
                {
-                   polyCount ++;
-                    curPolyList.add(e.getPoint());
+                   polyCount++;
+
+                   curPolyList.add(e.getPoint());
                     curXCord = e.getX();
                     curYCord = e.getY();
-                    if (polyCount == 4)
+                    if (polyCount == numOfPoints + 1)
                      {
                         // curFigure = new PolygonalChain(curPolyList, Color.BLACK);
+                         curFigure = new PolygonalChain(curPolyList, curBorderColor);
                          curPolyList = new ArrayList();
                          polyCount = 0;
                           figureList.add(curFigure);
@@ -247,7 +249,7 @@ public class PanelPaint extends JPanel
             {
                 switch (curInst)
                 {
-                    
+                    case POLYGONAL_CHAIN:
                     case POLYGON:
                         
                         if (polyCount != 0)
@@ -299,7 +301,7 @@ public class PanelPaint extends JPanel
         
         if (curFigure != null)
             curFigure.draw(graphics);
-        if (curInst == Instrument.POLYGON && !curPolyList.isEmpty())
+        if ((curInst == Instrument.POLYGON || curInst == Instrument.POLYGONAL_CHAIN) && !curPolyList.isEmpty())
         {
             for (int i=0; i< curPolyList.size()-1; ++i)
                 graphics.drawLine(curPolyList.get(i).x, curPolyList.get(i).y, 
