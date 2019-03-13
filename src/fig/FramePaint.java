@@ -1,4 +1,5 @@
-package system;
+package fig;
+
 
 import java.awt.BorderLayout;
 import javax.swing.*;
@@ -6,7 +7,12 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.event.ChangeEvent;
 
+/**
+ * @author Mark Drozd
+ */
 public class FramePaint extends JFrame {
+
+
     private JPanel borderColorShowPanel;
     private JPanel fillColorShowPanel;
     private JPanel instrumentPanel;
@@ -110,67 +116,67 @@ public class FramePaint extends JFrame {
 
         polygonInstrument = new JButton("");
         polygonInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/polygon.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         polygonInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.POLYGON);
         });
         ellipseInstrument = new JButton("");
         ellipseInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/ellipse.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         ellipseInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.ELLIPSE);
         });
         circleInstrument = new JButton("");
         circleInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/circle.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         circleInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.CIRCLE);
         });
         segmentInstrument = new JButton("");
         segmentInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/segment.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         segmentInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.SEGMENT);
         });
         rayInstrument = new JButton("");
         rayInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/ray.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         rayInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.RAY);
         });
         lineInstrument = new JButton("");
         lineInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/line.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         lineInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.LINE);
         });
         regularPolygonInstrument = new JButton("");
         regularPolygonInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/regularPolygon.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         regularPolygonInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.REGULAR_POLYGON);
         });
         isoscelesInstrument = new JButton("");
         isoscelesInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/isosceles.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         isoscelesInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.ISOSCELES_TRIANGLE);
         });
         rhombusInstrument = new JButton("");
         rhombusInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/rhombus.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         rhombusInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.RHOMBUS);
         });
         rectangleInstrument = new JButton("");
         rectangleInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/rectangle.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         rectangleInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.RECTANGLE);
         });
         polyChainInstrument = new JButton("");
         polyChainInstrument.setIcon(new ImageIcon((new ImageIcon("src/app/polyChain.ico")).
-                getImage().getScaledInstance(23, 23, java.awt.Image.SCALE_SMOOTH)));
+                getImage().getScaledInstance(23, 23, Image.SCALE_SMOOTH)));
         polyChainInstrument.addActionListener((ActionEvent e) -> {
             panelPaint.setInstrument(PanelPaint.Instrument.POLYGONAL_CHAIN);
         });
@@ -212,7 +218,6 @@ public class FramePaint extends JFrame {
         });
 
         JPanel sliderPanel = new JPanel();
-        //  sliderPanel.add(sliderStroke);
         sliderPanel.add(sliderNumOfPoints);
         add(sliderPanel);
 

@@ -1,38 +1,36 @@
-package system;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package fig;
 
-import figures.figures2D.ellipse.Circle;
-import figures.figures2D.ellipse.Ellipse;
-import figures.Figure;
-import figures.figures2D.polygons.symmetric.IsoscelesTriangle;
-import figures.figures1D.segments.Line;
-import figures.figures1D.segments.Ray;
-import figures.figures1D.segments.Segment;
-import figures.figures2D.polygons.Polygon;
-import figures.figures1D.PolygonalChain;
-import figures.figures2D.polygons.RegularPolygon;
-import figures.figures2D.polygons.symmetric.Rectangle;
-import figures.figures2D.polygons.symmetric.Rhombus;
+import fig.Circle;
+import fig.Ellipse;
+import fig.Figure;
+import fig.IsoscelesTriangle;
+import fig.Line;
+import fig.Ray;
+import fig.Segment;
+import fig.Polygon;
+import fig.PolygonalChain;
+import fig.RegularPolygon;
+import fig.Rectangle;
+import fig.Rhombus;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Mark Drozd
+ */
 public class PanelPaint extends JPanel {
-    private int prevXCord, prevYCord, curXCord, curYCord;
-    private Image image;
-    private Color curBorderColor;
-    private Color curFillColor;
-    private ArrayList<Figure> figureList;
-    private Figure curFigure;
-    private int curStroke;
-    private Graphics2D graphics;
-    private Instrument curInst = Instrument.REGULAR_POLYGON;
-    private int polyCount = 0;
-    private int numOfPoints = 5;
-    private boolean isDrawSelected = true;
-    private List<Point> curPolyList;
+//    private Point prevCords,
+//                  curCords;
 
     public enum Instrument {
         POLYGON,
@@ -47,6 +45,22 @@ public class PanelPaint extends JPanel {
         ISOSCELES_TRIANGLE,
         POLYGONAL_CHAIN
     }
+
+
+    private int prevXCord, prevYCord,
+            curXCord, curYCord;
+    private Image image;
+    private Color curBorderColor;
+    private Color curFillColor;
+    private ArrayList<Figure> figureList;
+    private Figure curFigure;
+    private int curStroke;
+    private Graphics2D graphics;
+    private Instrument curInst = Instrument.REGULAR_POLYGON;
+    private int polyCount = 0;
+    private int numOfPoints = 5;
+    private boolean isDrawSelected = true;
+    private List<Point> curPolyList;
 
     public PanelPaint() {
         curBorderColor = Color.BLACK;
@@ -84,7 +98,6 @@ public class PanelPaint extends JPanel {
                     curXCord = e.getX();
                     curYCord = e.getY();
                     if (polyCount == numOfPoints + 1) {
-                        // curFigure = new PolygonalChain(curPolyList, Color.BLACK);
                         curFigure = new PolygonalChain(curPolyList, curBorderColor);
                         curPolyList = new ArrayList();
                         polyCount = 0;
@@ -192,7 +205,7 @@ public class PanelPaint extends JPanel {
                         case REGULAR_POLYGON:
                             curPolyList.clear();
                             curPolyList.add(e.getPoint());
-                            ((RegularPolygon) curFigure).setPoints(curPolyList);
+                            ((RegularPolygon) curFigure).setpoints(curPolyList);
                             break;
 
                         case RECTANGLE:
@@ -208,7 +221,8 @@ public class PanelPaint extends JPanel {
                             break;
                     }
                 } else {
-                    if (curFigure != null) curFigure.move(new Point(curXCord - prevXCord, curYCord - prevYCord));
+                    if (curFigure != null)
+                        curFigure.move(new Point(curXCord - prevXCord, curYCord - prevYCord));
                 }
                 prevXCord = curXCord;
                 prevYCord = curYCord;
@@ -242,6 +256,7 @@ public class PanelPaint extends JPanel {
 
     }
 
+
     @Override
     public void paintComponent(Graphics g) {
         if (image == null || graphics == null) {
@@ -263,10 +278,18 @@ public class PanelPaint extends JPanel {
 
         if (curFigure != null)
             curFigure.draw(graphics);
+        graphics.setColor(curBorderColor);
         if ((curInst == Instrument.POLYGON || curInst == Instrument.POLYGONAL_CHAIN) && !curPolyList.isEmpty()) {
-            for (int i = 0; i < curPolyList.size() - 1; ++i)
+            for (int i = 0; i < curPolyList.size() - 1; ++i) {
+
                 graphics.drawLine(curPolyList.get(i).x, curPolyList.get(i).y,
                         curPolyList.get(i + 1).x, curPolyList.get(i + 1).y);
+                graphics.setColor(Color.RED);
+                graphics.drawOval(curPolyList.get(i).x - 2, curPolyList.get(i).y - 2, 4, 4);
+                graphics.drawOval(curPolyList.get(i + 1).x - 2, curPolyList.get(i + 1).y - 2, 4, 4);
+                graphics.setColor(curBorderColor);
+
+            }
             graphics.drawLine((curPolyList.get(curPolyList.size() - 1)).x, curPolyList.get(curPolyList.size() - 1).y,
                     curXCord, curYCord);
         }
@@ -304,6 +327,7 @@ public class PanelPaint extends JPanel {
         return numOfPoints;
     }
 
+
     public void clear() {
 
         graphics.setPaint(Color.white);
@@ -311,6 +335,7 @@ public class PanelPaint extends JPanel {
         graphics.setPaint(Color.black);
         repaint();
     }
+
 
     public void setInstrument(Instrument i) {
         curPolyList = new ArrayList();
