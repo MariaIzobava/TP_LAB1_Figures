@@ -36,15 +36,14 @@ public class Polygon extends Figure2D {
 		}
 	}
 	public boolean isMouseOver(Point p1) {
-		int minX=Integer.MAX_VALUE, minY=Integer.MAX_VALUE, maxX=0, maxY=0;
-		for(int i=0; i<points.size();i++){
-			Point buf=points.get(i);
-			if(buf.x>maxX) maxX=buf.x;
-			if(buf.x<minX) minX=buf.x;
-			if(buf.y>maxY) maxY=buf.y;
-			if(buf.y<minY) minY=buf.y;
+		int[] xCords = new int[points.size()];
+		int[] yCords = new int[points.size()];
+		for (int i=0; i<points.size(); ++i)
+		{
+			xCords[i]=points.get(i).x;
+			yCords[i]=points.get(i).y;
 		}
-		java.awt.Rectangle r = new java.awt.Rectangle(minX+10, minY+10,maxX-10,maxY-10);
+		java.awt.Polygon r = new java.awt.Polygon(xCords, yCords, points.size());
 		return r.contains(p1.x,p1.y);
 	}
         @Override
