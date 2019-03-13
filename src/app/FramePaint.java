@@ -39,7 +39,7 @@ public class FramePaint extends JFrame
     public FramePaint() {
         super("Draw Figures Application");
         setLayout(null);
-        setBounds(100, 100, 1100, 600);
+        setBounds(100, 100, 1400, 800);
         PanelPaint panelPaint = new PanelPaint();
         panelPaint.setPreferredSize(new Dimension(getSize().width - 50, getSize().height));
         JScrollPane scrollPane = new JScrollPane(panelPaint, JScrollPane.VERTICAL_SCROLLBAR_ALWAYS, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);

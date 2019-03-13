@@ -175,7 +175,8 @@ public class PanelPaint extends JPanel
             public void mouseReleased(MouseEvent e)
             {
                if(isDrawSelected) {
-                   figureList.add(curFigure);
+                   if (curFigure != null)
+                        figureList.add(curFigure);
                    switch (curInst) {
                        case REGULAR_POLYGON:
                        case RECTANGLE:
@@ -368,6 +369,8 @@ public class PanelPaint extends JPanel
     
     public void setInstrument (Instrument i)
     {
+        curPolyList = new ArrayList();
+        polyCount = 0;
         curInst = i;
     }
     public void isDrawingModeOn(boolean draw){isDrawSelected=draw;}
