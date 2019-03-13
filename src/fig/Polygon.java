@@ -30,9 +30,23 @@ public class Polygon extends Figure2D {
 	 * @param p1
 	 */
 	public void move(Point p1){
-
+		for(int i=0; i<points.size();i++){
+			points.get(i).x+=p1.x;
+			points.get(i).y+=p1.y;
+		}
 	}
-        
+	public boolean isMouseOver(Point p1) {
+		int minX=Integer.MAX_VALUE, minY=Integer.MAX_VALUE, maxX=0, maxY=0;
+		for(int i=0; i<points.size();i++){
+			Point buf=points.get(i);
+			if(buf.x>maxX) maxX=buf.x;
+			if(buf.x<minX) minX=buf.x;
+			if(buf.y>maxY) maxY=buf.y;
+			if(buf.y<minY) minY=buf.y;
+		}
+		java.awt.Rectangle r = new java.awt.Rectangle(minX+10, minY+10,maxX-10,maxY-10);
+		return r.contains(p1.x,p1.y);
+	}
         @Override
         public void draw(Graphics2D g) {
             if (g != null && points.size()!=0)

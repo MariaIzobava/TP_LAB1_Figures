@@ -31,9 +31,7 @@ public class SymmetricFigure extends Polygon {
      * 
      * @param p1
      */
-    public void move(Point p1){
-
-    }
+    //public void move(Point p1){}
 
     /**
      * 

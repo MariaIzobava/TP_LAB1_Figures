@@ -43,6 +43,10 @@ public class PolygonalChain extends Figure {
 	public void move(Point p2, Point p1){
 
 	}
+	@Override
+	public boolean isMouseOver(Point p1){
+		return false;
+	}
 
 	public void setcenter(){
 

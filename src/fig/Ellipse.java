@@ -36,7 +36,18 @@ public class Ellipse extends Figure2D {
                 
             }
 	}
-        
+	@Override
+	public void move(Point p1) {
+		firstPoint.x+=p1.x;
+		firstPoint.y+=p1.y;
+
+		secondPoint.x+=p1.x;
+		secondPoint.y+=p1.y;
+	}
+    public boolean isMouseOver(Point p1) {
+        java.awt.Rectangle r = new java.awt.Rectangle(firstPoint.x-10, firstPoint.y-10,secondPoint.x+10,secondPoint.y+10);
+        return r.contains(p1.x,p1.y);
+    }
         /**
 	 * 
 	 * @param newVal

@@ -32,7 +32,7 @@ public abstract class Figure {
 	public void move(Point p1) {
 
 	}
-
+	public abstract boolean isMouseOver(Point p1);
 	/**
 	 * 
 	 * @param newVal

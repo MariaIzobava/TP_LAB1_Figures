@@ -62,6 +62,7 @@ public class PanelPaint extends JPanel
     private Instrument curInst = Instrument.REGULAR_POLYGON;
     private int polyCount = 0;
     private int numOfPoints = 5;
+    private boolean isDrawSelected=true;
     private List<Point> curPolyList; 
     
     public PanelPaint()
@@ -129,39 +130,43 @@ public class PanelPaint extends JPanel
                prevXCord=e.getX();
                prevYCord=e.getY();
                
-               
-               switch (curInst)
-               {
-                   case ELLIPSE:
-                       curFigure = new Ellipse(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor, curFillColor);
-                       break;
-                   case CIRCLE:
-                       curFigure = new Circle(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor, curFillColor);
-                       break;
-                   case SEGMENT:
-                       curFigure = new Segment(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor);
-                       break;
-                   case REGULAR_POLYGON:
-                       curFigure = new RegularPolygon(curPolyList, new Point(prevXCord, prevYCord), numOfPoints,  curBorderColor, curFillColor);
-                       break;
-                   case RECTANGLE:
-                       curFigure = new Rectangle(curPolyList, new Point(prevXCord, prevYCord),  curBorderColor, curFillColor);
-                       break;
-                   case RAY:
-                      curFigure = new Ray(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor);
-                      break;    
-                   case LINE:
-                      curFigure = new Line(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor);
-                      break;    
-                   case RHOMBUS:
-                       curFigure = new Rhombus(curPolyList, new Point(prevXCord, prevYCord),  curBorderColor, curFillColor);
-                       break;
-                       
-                   case ISOSCELES_TRIANGLE:
-                       curFigure = new IsoscelesTriangle(curPolyList, new Point(prevXCord, prevYCord),  curBorderColor, curFillColor);
-                       break;
+               if(isDrawSelected) {
+                   switch (curInst) {
+                       case ELLIPSE:
+                           curFigure = new Ellipse(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor, curFillColor);
+                           break;
+                       case CIRCLE:
+                           curFigure = new Circle(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor, curFillColor);
+                           break;
+                       case SEGMENT:
+                           curFigure = new Segment(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor);
+                           break;
+                       case REGULAR_POLYGON:
+                           curFigure = new RegularPolygon(curPolyList, new Point(prevXCord, prevYCord), numOfPoints, curBorderColor, curFillColor);
+                           break;
+                       case RECTANGLE:
+                           curFigure = new Rectangle(curPolyList, new Point(prevXCord, prevYCord), curBorderColor, curFillColor);
+                           break;
+                       case RAY:
+                           curFigure = new Ray(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor);
+                           break;
+                       case LINE:
+                           curFigure = new Line(new Point(prevXCord, prevYCord), new Point(prevXCord, prevYCord), curBorderColor);
+                           break;
+                       case RHOMBUS:
+                           curFigure = new Rhombus(curPolyList, new Point(prevXCord, prevYCord), curBorderColor, curFillColor);
+                           break;
+
+                       case ISOSCELES_TRIANGLE:
+                           curFigure = new IsoscelesTriangle(curPolyList, new Point(prevXCord, prevYCord), curBorderColor, curFillColor);
+                           break;
+                   }
                }
-              
+               else{
+                   curFigure=null;
+                   for(int i=figureList.size()-1; i>=0;--i)
+                        if(figureList.get(i).isMouseOver(new Point(prevXCord,prevYCord))) curFigure=figureList.get(i);
+               }
              //  repaint();
              //  curCurve=new Curve(e.getX(), e.getY(), curColor, curStroke);
             }
@@ -169,17 +174,17 @@ public class PanelPaint extends JPanel
             @Override
             public void mouseReleased(MouseEvent e)
             {
-               figureList.add(curFigure);
-               switch (curInst)
-               {
-                   case REGULAR_POLYGON:
-                   case RECTANGLE:
-                   case RHOMBUS:
-                   case ISOSCELES_TRIANGLE:
-                       curPolyList = new ArrayList();
-                       break;
+               if(isDrawSelected) {
+                   figureList.add(curFigure);
+                   switch (curInst) {
+                       case REGULAR_POLYGON:
+                       case RECTANGLE:
+                       case RHOMBUS:
+                       case ISOSCELES_TRIANGLE:
+                           curPolyList = new ArrayList();
+                           break;
+                   }
                }
-                    
             }
             
             
@@ -195,49 +200,48 @@ public class PanelPaint extends JPanel
                curXCord=e.getX();
                curYCord=e.getY();
                
-               
-               switch (curInst)
-               {
+               if(isDrawSelected){
+               switch (curInst) {
                    case ELLIPSE:
-                       ((Ellipse)curFigure).setSecondPoint(e.getPoint());
+                       ((Ellipse) curFigure).setSecondPoint(e.getPoint());
                        break;
                    case CIRCLE:
-                       ((Circle)curFigure).setSecondPoint(e.getPoint());
+                       ((Circle) curFigure).setSecondPoint(e.getPoint());
                        break;
                    case SEGMENT:
-                       ((Segment)curFigure).setSecondPoint(e.getPoint());
+                       ((Segment) curFigure).setSecondPoint(e.getPoint());
                        break;
                    case RAY:
-                       ((Ray)curFigure).setSecondPoint(e.getPoint());
+                       ((Ray) curFigure).setSecondPoint(e.getPoint());
                        break;
                    case LINE:
-                       ((Line)curFigure).setSecondPoint(e.getPoint());
+                       ((Line) curFigure).setSecondPoint(e.getPoint());
                        break;
-                       
-                       
-                       
+
+
                    case REGULAR_POLYGON:
                        curPolyList.clear();
                        curPolyList.add(e.getPoint());
-                       ((RegularPolygon)curFigure).setpoints(curPolyList);
+                       ((RegularPolygon) curFigure).setpoints(curPolyList);
                        break;
-                       
+
                    case RECTANGLE:
-                       ((Rectangle)curFigure).setSecondPoint(e.getPoint());
+                       ((Rectangle) curFigure).setSecondPoint(e.getPoint());
                        break;
-                       
+
                    case RHOMBUS:
-                   ((Rhombus)curFigure).setSecondPoint(e.getPoint());
-                   break;
-                   
+                       ((Rhombus) curFigure).setSecondPoint(e.getPoint());
+                       break;
+
                    case ISOSCELES_TRIANGLE:
-                   ((IsoscelesTriangle)curFigure).setSecondPoint(e.getPoint());
-                   break;
-                       
-                       
+                       ((IsoscelesTriangle) curFigure).setSecondPoint(e.getPoint());
+                       break;
+               }
+               }else{
+                   if(curFigure!=null) curFigure.move(new Point(curXCord-prevXCord,curYCord-prevYCord));
                }
                prevXCord=curXCord;
-                    prevYCord=curYCord;
+               prevYCord=curYCord;
                repaint();
                
            }
@@ -366,5 +370,5 @@ public class PanelPaint extends JPanel
     {
         curInst = i;
     }
-    
+    public void isDrawingModeOn(boolean draw){isDrawSelected=draw;}
 }

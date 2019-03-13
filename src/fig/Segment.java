@@ -39,6 +39,10 @@ public class Segment extends Figure1D {
 	public void move(Point p1){
 
 	}
+    @Override
+    public boolean isMouseOver(Point p1){
+        return false;
+    }
 
 	public void setCenter() {
             center.move((firstPoint.x + secondPoint.x)/2, 
