@@ -45,7 +45,9 @@ public class Ellipse extends Figure2D {
 		secondPoint.y+=p1.y;
 	}
     public boolean isMouseOver(Point p1) {
-        java.awt.Rectangle r = new java.awt.Rectangle(firstPoint.x-10, firstPoint.y-10,secondPoint.x+10,secondPoint.y+10);
+		Ellipse2D r = new Ellipse2D.Double((firstPoint.x < secondPoint.x) ? firstPoint.x : secondPoint.x,
+				(firstPoint.y < secondPoint.y) ? firstPoint.y : secondPoint.y, abs(secondPoint.x - firstPoint.x),
+				abs(secondPoint.y - firstPoint.y));
         return r.contains(p1.x,p1.y);
     }
         /**
